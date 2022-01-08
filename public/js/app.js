@@ -1,12 +1,7 @@
-console.log('Kliento puses javaskriptas uzkrautas')
-
-
 const weatherform = document.querySelector('form')
 const search = document.querySelector('input')
 const zinute1 = document.querySelector('#zinute1')
 const zinute2 = document.querySelector('#zinute2')
-
-
 
 weatherform.addEventListener('submit', (e) => {
     e.preventDefault()
