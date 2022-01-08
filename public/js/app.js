@@ -8,7 +8,7 @@ weatherform.addEventListener('submit', (e) => {
     const adresas=search.value
     zinute1.textContent = ''
     zinute2.textContent = ''
-    fetch('http://localhost:3000/oras?address='+ adresas).then((response) => {
+    fetch('/oras?address='+ adresas).then((response) => {
     response.json().then((data) => {
         if (data.error) {
             zinute1.textContent = data.error
