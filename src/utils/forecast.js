@@ -9,8 +9,7 @@ const forecast = (pavadinimas, callback) => {
         } else if  (response.body.error ) {
             callback('Nera tokios vietos', undefined)
         } else {
-            callback(undefined, 'Dabar yra: ' + response.body.current.temperature + ' C jausmas kaip ' + response.body.current.feelslike + ' Vėjo greitis,  Drėgmė ' + response.body.current.humiditygit
-                + response.body.current.wind_speed)
+            callback(undefined, 'Dabar yra: ' + response.body.current.temperature + ' C jausmas kaip ' + response.body.current.feelslike + ' Vėjo greitis ' + response.body.current.wind_speed +' Drėgmė ' + response.body.current.humidity)
         }
         
     })
